@@ -1,0 +1,36 @@
+table{
+    color: yellow;
+    width: 100%;
+}
+tr{
+    border-bottom:  2px solid yellow;
+    margin:2px 15px;
+    
+    font-size: 20px;
+
+}
+thead{
+    font-size: 22px;
+    margin: 10px 15px;
+}
+h2{
+    color: yellow;
+}
+.meeting-wrapper{
+    height: 810px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: white */
+}
+.meeting-box{
+    width: 70%;
+    padding: 32px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

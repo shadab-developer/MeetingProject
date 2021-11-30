@@ -1,0 +1,21 @@
+<div class="meeting-wrapper">
+   <div class="meeting-box">
+       <h2 class="text-center">Meeting List</h2>
+    <table>
+        <thead>
+            <th>Student Name</th>
+            <th>Section</th>
+            <th>Degree</th>
+            <th>Date/Time</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of meetingObject">
+               <td>{{item.studentName}}</td>
+               <td>{{item.Section}}</td>
+               <td>{{item.Degree}}</td>
+                <td>{{item.datetime}}</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+</div>

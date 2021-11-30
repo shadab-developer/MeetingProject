@@ -1,0 +1,39 @@
+<div class="container-fluid form-wrapper">
+     <form class="form-box" [formGroup]="form" (ngSubmit)="submit()">
+        <div class="">
+            <h2 class="text-center">Student Form</h2>
+        </div>
+        <div class="input-list input-list-top">
+            <input type="text" class="form-control input-bg" formControlName="Stdname" id="exampleFormControlInput1" placeholder="Student Name">
+             <span [style.color]="'red'" [class.bindClass]="true" *ngIf="Stdname && Stdname.invalid && Stdname.touched">This Field is required</span>
+          </div>
+          <div class="">
+            <select formControlName="Section" class="form-select input-list input-bg" aria-label="Default select example">
+              <option  selected class="">Select Section</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+            </select>
+            <span [style.color]="'red'" [class.bindClass]="true" *ngIf="Section && Section.invalid && Section.touched">This Field is required</span>
+            
+          </div>
+           <div class="">
+            <select formControlName="degree" class="form-select input-list input-bg" aria-label="Default select example">
+              <option class="" selected>Select Degree</option>
+              <option value="Bs Computer Science">BS Computer Science</option>
+              <option value="BS Math">BS Math</option>
+              <option value="Bs English">Bs English</option>
+            </select>
+            <span [style.color]="'red'"[class.bindClass]="true"  *ngIf="degree && degree.invalid && degree.touched">This Field is required</span>
+
+           </div>
+          <div class="input-list">
+            <input type="datetime-local" formControlName="dateTime" class="input-bg form-control" id="exampleFormControlInput4" >
+            <span [style.color]="'red'" [class.bindClass]="true" *ngIf="dateTime && dateTime.invalid && dateTime.touched">This Field is required</span>
+          </div>
+          <div class="form-btn ">
+            <input type="submit" class="formbtn form-control" id="exampleFormControlInput4" >
+            
+          </div>
+        </form>
+</div>
